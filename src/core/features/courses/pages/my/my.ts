@@ -15,11 +15,13 @@
 import { AddonBlockMyOverviewComponent } from '@addons/block/myoverview/components/myoverview/myoverview';
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { CoreBlockComponent } from '@features/block/components/block/block';
+import { CoreBlockDelegate } from '@features/block/services/block-delegate';
 import { CoreCourseBlock } from '@features/course/services/course';
 import { CoreCoursesDashboard, CoreCoursesDashboardProvider } from '@features/courses/services/dashboard';
 import { CoreMainMenuDeepLinkManager } from '@features/mainmenu/classes/deep-link-manager';
 import { IonRefresher } from '@ionic/angular';
 import { CoreSites } from '@services/sites';
+import { CoreDomUtils } from '@services/utils/dom';
 import { CoreUtils } from '@services/utils/utils';
 import { CoreEventObserver, CoreEvents } from '@singletons/events';
 import { CoreCourses } from '../../services/courses';
@@ -42,6 +44,8 @@ export class CoreCoursesMyCoursesPage implements OnInit, OnDestroy {
     loadedBlock?: Partial<CoreCourseBlock>;
     myOverviewBlock?: AddonBlockMyOverviewComponent;
     loaded = false;
+    myPageCourses = CoreCoursesDashboardProvider.MY_PAGE_COURSES;
+    hasSideBlocks = false;
 
     protected updateSiteObserver: CoreEventObserver;
 
@@ -77,24 +81,39 @@ export class CoreCoursesMyCoursesPage implements OnInit, OnDestroy {
         const available = await CoreCoursesDashboard.isAvailable();
         const disabled = await CoreCourses.isMyCoursesDisabled();
 
+        const supportsMyParam = !!CoreSites.getCurrentSite()?.isVersionGreaterEqualThan('4.0');
+
         if (available && !disabled) {
             try {
-                const blocks = await CoreCoursesDashboard.getDashboardBlocksFromWS(CoreCoursesDashboardProvider.MY_PAGE_COURSES);
+                const blocks = await CoreCoursesDashboard.getDashboardBlocks(
+                    undefined,
+                    undefined,
+                    supportsMyParam ? this.myPageCourses : undefined,
+                );
 
-                this.loadedBlock = blocks.find((block) => block.name == 'myoverview');
+                // My overview block should always be in main blocks, but check side blocks too just in case.
+                this.loadedBlock = blocks.mainBlocks.concat(blocks.sideBlocks).find((block) => block.name == 'myoverview');
+                this.hasSideBlocks = supportsMyParam && CoreBlockDelegate.hasSupportedBlock(blocks.sideBlocks);
 
                 await CoreUtils.nextTicks(2);
 
                 this.myOverviewBlock = this.block?.dynamicComponent?.instance as AddonBlockMyOverviewComponent;
-            } catch {
+
+                if (!this.loadedBlock && !supportsMyParam) {
+                    // In old sites, display the block even if not found in Dashboard.
+                    // This is because the "My courses" page doesn't exist in the site so it can't be configured.
+                    this.loadFallbackBlock();
+                }
+            } catch (error) {
+                CoreDomUtils.showErrorModal(error);
+
                 // Cannot get the blocks, just show the block if needed.
                 this.loadFallbackBlock();
             }
         } else if (!available) {
-            // WS not available, or my courses page not available. show fallback block.
+            // WS not available, show fallback block.
             this.loadFallbackBlock();
         } else {
-            // Disabled.
             this.loadedBlock = undefined;
         }
 

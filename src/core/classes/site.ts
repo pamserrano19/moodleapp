@@ -41,12 +41,11 @@ import { CoreLogger } from '@singletons/logger';
 import { Translate } from '@singletons';
 import { CoreIonLoadingElement } from './ion-loading';
 import { CoreLang } from '@services/lang';
-import { CoreSites } from '@services/sites';
+import { CoreSites, CoreSitesReadingStrategy } from '@services/sites';
 import { asyncInstance, AsyncInstance } from '../utils/async-instance';
 import { CoreDatabaseTable } from './database/database-table';
 import { CoreDatabaseCachingStrategy } from './database/database-table-proxy';
 import { CoreSilentError } from './errors/silenterror';
-import { CoreWindow } from '@singletons/window';
 
 /**
  * QR Code type enumeration.
@@ -96,7 +95,7 @@ export class CoreSite {
         '3.9': 2020061500,
         '3.10': 2020110900,
         '3.11': 2021051700,
-        '4.0': 2021100300, // @todo [4.0] replace with right value when released. Using a tmp value to be able to test new things.
+        '4.0': 2022041900,
     };
 
     // Possible cache update frequencies.
@@ -1389,9 +1388,88 @@ export class CoreSite {
     /**
      * Get the public config of this site.
      *
+     * @param options Options.
      * @return Promise resolved with public config. Rejected with an object if error, see CoreWSProvider.callAjax.
      */
-    async getPublicConfig(): Promise<CoreSitePublicConfigResponse> {
+    async getPublicConfig(options: { readingStrategy?: CoreSitesReadingStrategy } = {}): Promise<CoreSitePublicConfigResponse> {
+        if (!this.db) {
+            return this.requestPublicConfig();
+        }
+
+        const method = 'tool_mobile_get_public_config';
+        const cacheId = this.getCacheId(method, {});
+        const cachePreSets: CoreSiteWSPreSets = {
+            getFromCache: true,
+            saveToCache: true,
+            emergencyCache: true,
+            ...CoreSites.getReadingStrategyPreSets(options.readingStrategy),
+        };
+
+        if (this.offlineDisabled) {
+            // Offline is disabled, don't use cache.
+            cachePreSets.getFromCache = false;
+            cachePreSets.saveToCache = false;
+            cachePreSets.emergencyCache = false;
+        }
+
+        // Check for an ongoing identical request if we're not ignoring cache.
+        if (cachePreSets.getFromCache && this.ongoingRequests[cacheId]) {
+            const response = await this.ongoingRequests[cacheId];
+
+            return response;
+        }
+
+        const promise = this.getFromCache<CoreSitePublicConfigResponse>(method, {}, cachePreSets, false).catch(async () => {
+            if (cachePreSets.forceOffline) {
+                // Don't call the WS, just fail.
+                throw new CoreError(
+                    Translate.instant('core.cannotconnect', { $a: CoreSite.MINIMUM_MOODLE_VERSION }),
+                );
+            }
+
+            // Call the WS.
+            try {
+                const config = await this.requestPublicConfig();
+
+                if (cachePreSets.saveToCache) {
+                    this.saveToCache(method, {}, config, cachePreSets);
+                }
+
+                return config;
+            } catch (error) {
+                cachePreSets.omitExpires = true;
+                cachePreSets.getFromCache = true;
+
+                try {
+                    return await this.getFromCache<CoreSitePublicConfigResponse>(method, {}, cachePreSets, true);
+                } catch {
+                    throw error;
+                }
+            }
+        });
+
+        this.ongoingRequests[cacheId] = promise;
+
+        // Clear ongoing request after setting the promise (just in case it's already resolved).
+        try {
+            const response = await promise;
+
+            // We pass back a clone of the original object, this may prevent errors if in the callback the object is modified.
+            return response;
+        } finally {
+            // Make sure we don't clear the promise of a newer request that ignores the cache.
+            if (this.ongoingRequests[cacheId] === promise) {
+                delete this.ongoingRequests[cacheId];
+            }
+        }
+    }
+
+    /**
+     * Perform a request to the server to get the public config of this site.
+     *
+     * @return Promise resolved with public config.
+     */
+    protected async requestPublicConfig(): Promise<CoreSitePublicConfigResponse> {
         const preSets: CoreWSAjaxPreSets = {
             siteUrl: this.siteUrl,
         };
@@ -1529,16 +1607,7 @@ export class CoreSite {
         if (inApp) {
             return CoreUtils.openInApp(autoLoginUrl, options);
         } else {
-            if ((options.showBrowserWarning || options.showBrowserWarning === undefined) && autoLoginUrl !== url) {
-                // Don't display the autologin URL in the warning.
-                try {
-                    await CoreWindow.confirmOpenBrowserIfNeeded(url);
-
-                    options.showBrowserWarning = false;
-                } catch (error) {
-                    return; // Cancelled, stop.
-                }
-            }
+            options.browserWarningUrl = url;
 
             return CoreUtils.openInBrowser(autoLoginUrl, options);
         }

@@ -461,6 +461,34 @@ ion-alert.core-nohead {
     }
 }
 
+@keyframes scaleFrom0 {
+    from {
+        /* More performant than animating `width` */
+        transform: scaleX(0);
+    }
+}
+
+ion-alert .alert-button.timed-button{
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: var(--primary-tint);
+        animation: scaleFrom0 10s forwards linear;
+        transform-origin: left;
+        @include rtl() {
+            transform-origin: right;
+        }
+        z-index: -1;
+    }
+}
+
 ion-alert {
     --border-radius: var(--huge-radius);
 
@@ -501,10 +529,6 @@ ion-toast {
     @include media-breakpoint-down(sm) {
         &::part(container) {
             flex-direction: column;
-            align-items: flex-end;
-        }
-        &::part(message) {
-            align-self: flex-start;
         }
     }
 }
@@ -798,6 +822,12 @@ body.core-iframe-fullscreen ion-router-outlet {
         }
     }
 
+    .core-iframe-fullscreen ion-card.core-#{$color-name}-card,
+    .core-iframe-fullscreen .item.core-#{$color-name}-item {
+        opacity: 0 !important;
+        height: 0 !important;
+    }
+
     ion-icon.ion-color-#{$color-name} {
         --ion-color-base: var(--ion-color-#{$color-name});
         color: var(--ion-color-base);
@@ -847,6 +877,10 @@ ion-card {
 
     ion-item:only-child {
         --inner-border-width: 0px;
+    }
+
+    ion-card-title {
+        font-size: 20px;
     }
 }
 
@@ -1059,6 +1093,16 @@ ion-button.chip {
 
     ion-label {
         white-space: normal !important;
+    }
+}
+
+ion-button.chip {
+    ion-icon[slot=start] {
+        @include margin(0, 8px, 0, 0);
+    }
+
+    ion-icon[slot=end] {
+        @include margin(0, 0, 0, 8px);
     }
 }
 
@@ -1680,4 +1724,9 @@ ion-header.no-title {
         top: 0;
         bottom: 0;
     }
+}
+
+// Fix subtitles wider than video.
+video::-webkit-media-text-track-display {
+    white-space: normal !important;
 }

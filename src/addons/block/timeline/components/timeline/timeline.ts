@@ -31,6 +31,7 @@ import { CoreNavigator } from '@services/navigator';
 @Component({
     selector: 'addon-block-timeline',
     templateUrl: 'addon-block-timeline.html',
+    styleUrls: ['timeline.scss'],
 })
 export class AddonBlockTimelineComponent extends CoreBlockBaseComponent implements OnInit {
 
@@ -57,12 +58,15 @@ export class AddonBlockTimelineComponent extends CoreBlockBaseComponent implemen
 
     dataFrom?: number;
     dataTo?: number;
+    overdue = false;
 
     searchEnabled = false;
     searchText = '';
 
-    protected courseIds: number[] = [];
+    protected courseIdsToInvalidate: number[] = [];
     protected fetchContentDefaultError = 'Error getting timeline data.';
+    protected gradePeriodAfter = 0;
+    protected gradePeriodBefore = 0;
 
     constructor() {
         super('AddonBlockTimelineComponent');
@@ -104,8 +108,8 @@ export class AddonBlockTimelineComponent extends CoreBlockBaseComponent implemen
         promises.push(AddonBlockTimeline.invalidateActionEventsByCourses());
         promises.push(CoreCourses.invalidateUserCourses());
         promises.push(CoreCourseOptionsDelegate.clearAndInvalidateCoursesOptions());
-        if (this.courseIds.length > 0) {
-            promises.push(CoreCourses.invalidateCoursesByField('ids', this.courseIds.join(',')));
+        if (this.courseIdsToInvalidate.length > 0) {
+            promises.push(CoreCourses.invalidateCoursesByField('ids', this.courseIdsToInvalidate.join(',')));
         }
 
         return CoreUtils.allPromises(promises);
@@ -160,7 +164,7 @@ export class AddonBlockTimelineComponent extends CoreBlockBaseComponent implemen
     protected async fetchMyOverviewTimeline(afterEventId?: number): Promise<void> {
         const events = await AddonBlockTimeline.getActionEventsByTimesort(afterEventId, this.searchText);
 
-        this.timeline.events = events.events;
+        this.timeline.events = afterEventId ? this.timeline.events.concat(events.events) : events.events;
         this.timeline.canLoadMore = events.canLoadMore;
     }
 
@@ -170,13 +174,26 @@ export class AddonBlockTimelineComponent extends CoreBlockBaseComponent implemen
      * @return Promise resolved when done.
      */
     protected async fetchMyOverviewTimelineByCourses(): Promise<void> {
+        try {
+            this.gradePeriodAfter = parseInt(await this.currentSite.getConfig('coursegraceperiodafter'), 10);
+            this.gradePeriodBefore = parseInt(await this.currentSite.getConfig('coursegraceperiodbefore'), 10);
+        } catch {
+            this.gradePeriodAfter = 0;
+            this.gradePeriodBefore = 0;
+        }
+
         // Do not filter courses by date because they can contain activities due.
         this.timelineCourses.courses = await CoreCoursesHelper.getUserCoursesWithOptions();
+        this.courseIdsToInvalidate = this.timelineCourses.courses.map((course) => course.id);
+
+        // Filter only in progress courses.
+        this.timelineCourses.courses = this.timelineCourses.courses.filter((course) =>
+            !course.hidden &&
+            !CoreCoursesHelper.isPastCourse(course, this.gradePeriodAfter) &&
+            !CoreCoursesHelper.isFutureCourse(course, this.gradePeriodAfter, this.gradePeriodBefore));
 
         if (this.timelineCourses.courses.length > 0) {
-            this.courseIds = this.timelineCourses.courses.map((course) => course.id);
-
-            const courseEvents = await AddonBlockTimeline.getActionEventsByCourses(this.courseIds, this.searchText);
+            const courseEvents = await AddonBlockTimeline.getActionEventsByCourses(this.courseIdsToInvalidate, this.searchText);
 
             this.timelineCourses.courses = this.timelineCourses.courses.filter((course) => {
                 if (courseEvents[course.id].events.length == 0) {
@@ -199,6 +216,7 @@ export class AddonBlockTimelineComponent extends CoreBlockBaseComponent implemen
     switchFilter(filter: string): void {
         this.filter = filter;
         this.currentSite.setLocalSiteConfig('AddonBlockTimelineFilter', this.filter);
+        this.overdue = this.filter === 'overdue';
 
         switch (this.filter) {
             case 'overdue':

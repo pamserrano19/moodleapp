@@ -1,20 +1,16 @@
 @import "~theme/globals";
 
 @mixin inline() {
-    min-height: var(--internal-loading-inline-min-height);
-    max-height: 100vh; // In order show it on the page (content will be cut).
-
     &:not(.core-loading-loaded) {
+        min-height: var(--internal-loading-inline-min-height);
+        width: 100%;
         position: relative;
-        --contents-display: flex;
-        flex-direction: column;
     }
 
     .core-loading-container {
         --loading-background: rgba(var(--loading-background-inline), 0.4);
         flex-direction: row;
         height: auto;
-        width: auto;
 
         .core-loading-message {
             @include margin(0, 0, 0, 10px);
@@ -32,7 +28,7 @@
     --internal-loading-inline-min-height: var(--loading-inline-min-height);
     --loading-display: flex;
     --loading-display-message: block;
-    --contents-display: contents;
+    --contents-display: block;
 
     @include core-transition(all, 200ms);
     pointer-events: none;
@@ -41,6 +37,7 @@
     &.core-loading-loaded {
         position: static;
         pointer-events: auto;
+        --contents-display: contents;
         --internal-loading-inline-min-height: 0px;
 
         &.has-spacer {
@@ -56,7 +53,7 @@
         @include position(0, 0, 0, 0);
         height: 100%;
         width: 100%;
-        z-index: 3;
+        z-index: 100;
         margin: 0;
         padding: 0;
         color: var(--loading-text-color);
@@ -91,7 +88,9 @@
 }
 
 :host-context(.limited-width > ):not([slot]) {
-    --contents-display: flex;
-    flex-direction: column;
+    &.core-loading-loaded {
+        --contents-display: flex;
+        flex-direction: column;
+    }
     min-height: 100%;
 }
