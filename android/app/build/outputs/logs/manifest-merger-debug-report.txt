@@ -1,0 +1,725 @@
+-- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:27:9-35:20
+	android:grantUriPermissions
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:31:13-47
+	android:authorities
+		INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:29:13-64
+	android:exported
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:28:13-62
+manifest
+ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:2:1-41:12
+MERGED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-159:12
+MERGED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:2:1-52:12
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:17:1-55:12
+MERGED from [:capacitor-app] F:\moodle\moodleapp\node_modules\@capacitor\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:capacitor-haptics] F:\moodle\moodleapp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:capacitor-keyboard] F:\moodle\moodleapp\node_modules\@capacitor\keyboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:capacitor-status-bar] F:\moodle\moodleapp\node_modules\@capacitor\status-bar\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:capacitor-android] F:\moodle\moodleapp\node_modules\@capacitor\android\capacitor\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat:1.3.1] D:\caches\transforms-3\8bc434cf9bd29564b0e7f20932fbfa23\transformed\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v13:1.0.0] D:\caches\transforms-3\5f9a9206cfd854bd7a6307ed95ccbf51\transformed\legacy-support-v13-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] D:\caches\transforms-3\7e496931ce972c329e54cea77d97f55b\transformed\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] D:\caches\transforms-3\874f0dcb26ff60c16ef65eaa615891e2\transformed\jetified-firebase-iid-interop-16.0.1\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] D:\caches\transforms-3\114ff0e1619142e0fce70e822c786fe4\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] D:\caches\transforms-3\2cb2fa7c69d1b18fe5a50e6091fc7938\transformed\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] D:\caches\transforms-3\3ad350df70624c8a4cf479521ff73910\transformed\jetified-firebase-measurement-connector-17.0.1\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] D:\caches\transforms-3\0fc35b9ff05ea0313269e1cfcc28d619\transformed\jetified-play-services-stats-16.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] D:\caches\transforms-3\2d142334f94010248b393888d532ade6\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\caches\transforms-3\d9b7e84b2405f738ee156f0ce8107f01\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.3.6] D:\caches\transforms-3\5485aa083b1ff224b56118826765b337\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] D:\caches\transforms-3\060ebf28c8810d0a3c8f5acd76de0d63\transformed\jetified-activity-1.2.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] D:\caches\transforms-3\2772f318967429df1c472eb4b64a6666\transformed\jetified-appcompat-resources-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] D:\caches\transforms-3\f68b8a6df7e7c00387301681f2808a47\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] D:\caches\transforms-3\cba768a03be081d0160a07a517a061e4\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] D:\caches\transforms-3\5abd558bbe3af6bd6603e6bea27b2ee3\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] D:\caches\transforms-3\918ff905898bcc984b2cbd1e0e76b090\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] D:\caches\transforms-3\5ae8911b433767ce1fa47b99dd67d4ce\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] D:\caches\transforms-3\3fc44e5217b3730e436ad77c4546b9bd\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] D:\caches\transforms-3\690cd8d7343bfdeaefa0dddddbd4b915\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] D:\caches\transforms-3\fbe11a65b261831c1a569901d9ee6c57\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] D:\caches\transforms-3\ebad07d60a6841559ca933f3516049d7\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] D:\caches\transforms-3\c84a7ba3f7035992be0413103e15fbb6\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] D:\caches\transforms-3\e0020d0fd2b694f7e1231cdbb8a141d4\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] D:\caches\transforms-3\a91993defad424062333f688e70bb239\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] D:\caches\transforms-3\ed582bdeb5f51c3f011cfbe5a85b57e5\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] D:\caches\transforms-3\f088c8f9273e7dc16b21b38e20325a65\transformed\core-1.6.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\caches\transforms-3\7384bb70955de8ce5450c1273d2fca23\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] D:\caches\transforms-3\5bf6e8b8740b135e76cfd27a4bf0d1d4\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] D:\caches\transforms-3\ca3aef3c5f957b127137158068a336e1\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] D:\caches\transforms-3\273e1bc36117e8e732c26e898439302a\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] D:\caches\transforms-3\f62d6425501a7d61deb83b3f574aaa02\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] D:\caches\transforms-3\5744c49fa2bdc2da4279bf822f5bfbe3\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.tracing:tracing:1.0.0] D:\caches\transforms-3\4d76bcd7c31cb7da24f41953bde9acb8\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] D:\caches\transforms-3\5b73d3498c137dfe1d3fd4fad8d3e9fa\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] D:\caches\transforms-3\a6908997b94f9db4a605e9a1cbc2c572\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] D:\caches\transforms-3\3fcfcb844d66a800447812f63b1f3c15\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] D:\caches\transforms-3\aa6365d44f251e551445148fd21f6d15\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] D:\caches\transforms-3\850de2c56e3c213e59c67ea887a8f4f2\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] D:\caches\transforms-3\5ecaa617c9b7eb9d634928a6b4317513\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] D:\caches\transforms-3\afd36f4aa718d733e65047aec44bd834\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [org.apache.cordova:framework:7.0.0] D:\caches\transforms-3\79e70e02afb82f9c4500b10f9ee3fd62\transformed\jetified-framework-7.0.0\AndroidManifest.xml:20:1-27:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] D:\caches\transforms-3\558415f3e97b19583e168243244924a9\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:2:1-41:12
+	package
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:3:5-31
+		INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:2:1-41:12
+		INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:2:1-41:12
+		INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:5:5-36:19
+MERGED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:70:5-157:19
+MERGED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:70:5-157:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:45:5-53:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:45:5-53:19
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] D:\caches\transforms-3\7e496931ce972c329e54cea77d97f55b\transformed\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] D:\caches\transforms-3\7e496931ce972c329e54cea77d97f55b\transformed\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] D:\caches\transforms-3\874f0dcb26ff60c16ef65eaa615891e2\transformed\jetified-firebase-iid-interop-16.0.1\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] D:\caches\transforms-3\874f0dcb26ff60c16ef65eaa615891e2\transformed\jetified-firebase-iid-interop-16.0.1\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] D:\caches\transforms-3\114ff0e1619142e0fce70e822c786fe4\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] D:\caches\transforms-3\114ff0e1619142e0fce70e822c786fe4\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] D:\caches\transforms-3\2cb2fa7c69d1b18fe5a50e6091fc7938\transformed\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] D:\caches\transforms-3\2cb2fa7c69d1b18fe5a50e6091fc7938\transformed\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] D:\caches\transforms-3\3ad350df70624c8a4cf479521ff73910\transformed\jetified-firebase-measurement-connector-17.0.1\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] D:\caches\transforms-3\3ad350df70624c8a4cf479521ff73910\transformed\jetified-firebase-measurement-connector-17.0.1\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] D:\caches\transforms-3\0fc35b9ff05ea0313269e1cfcc28d619\transformed\jetified-play-services-stats-16.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] D:\caches\transforms-3\0fc35b9ff05ea0313269e1cfcc28d619\transformed\jetified-play-services-stats-16.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] D:\caches\transforms-3\2d142334f94010248b393888d532ade6\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] D:\caches\transforms-3\2d142334f94010248b393888d532ade6\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.6.0] D:\caches\transforms-3\f088c8f9273e7dc16b21b38e20325a65\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] D:\caches\transforms-3\f088c8f9273e7dc16b21b38e20325a65\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] D:\caches\transforms-3\5744c49fa2bdc2da4279bf822f5bfbe3\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] D:\caches\transforms-3\5744c49fa2bdc2da4279bf822f5bfbe3\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] D:\caches\transforms-3\f088c8f9273e7dc16b21b38e20325a65\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:11:9-40
+activity#io.ionic.starter.MainActivity
+ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:13:9-25:20
+	android:label
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:16:13-56
+	android:launchMode
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:18:13-44
+	android:configChanges
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:14:13-129
+	android:theme
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:17:13-62
+	android:name
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:15:13-57
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:20:13-23:29
+action#android.intent.action.MAIN
+ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:22:27-74
+uses-permission#android.permission.INTERNET
+ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:40:5-67
+MERGED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:5-67
+MERGED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:40:22-64
+uses-sdk
+INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+MERGED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:7:5-9:41
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:19:5-43
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:19:5-43
+MERGED from [:capacitor-app] F:\moodle\moodleapp\node_modules\@capacitor\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-app] F:\moodle\moodleapp\node_modules\@capacitor\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-haptics] F:\moodle\moodleapp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-haptics] F:\moodle\moodleapp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-keyboard] F:\moodle\moodleapp\node_modules\@capacitor\keyboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-keyboard] F:\moodle\moodleapp\node_modules\@capacitor\keyboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-status-bar] F:\moodle\moodleapp\node_modules\@capacitor\status-bar\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-status-bar] F:\moodle\moodleapp\node_modules\@capacitor\status-bar\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-android] F:\moodle\moodleapp\node_modules\@capacitor\android\capacitor\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-android] F:\moodle\moodleapp\node_modules\@capacitor\android\capacitor\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] D:\caches\transforms-3\8bc434cf9bd29564b0e7f20932fbfa23\transformed\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] D:\caches\transforms-3\8bc434cf9bd29564b0e7f20932fbfa23\transformed\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v13:1.0.0] D:\caches\transforms-3\5f9a9206cfd854bd7a6307ed95ccbf51\transformed\legacy-support-v13-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v13:1.0.0] D:\caches\transforms-3\5f9a9206cfd854bd7a6307ed95ccbf51\transformed\legacy-support-v13-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] D:\caches\transforms-3\7e496931ce972c329e54cea77d97f55b\transformed\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] D:\caches\transforms-3\7e496931ce972c329e54cea77d97f55b\transformed\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] D:\caches\transforms-3\874f0dcb26ff60c16ef65eaa615891e2\transformed\jetified-firebase-iid-interop-16.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] D:\caches\transforms-3\874f0dcb26ff60c16ef65eaa615891e2\transformed\jetified-firebase-iid-interop-16.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] D:\caches\transforms-3\114ff0e1619142e0fce70e822c786fe4\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] D:\caches\transforms-3\114ff0e1619142e0fce70e822c786fe4\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] D:\caches\transforms-3\2cb2fa7c69d1b18fe5a50e6091fc7938\transformed\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] D:\caches\transforms-3\2cb2fa7c69d1b18fe5a50e6091fc7938\transformed\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] D:\caches\transforms-3\3ad350df70624c8a4cf479521ff73910\transformed\jetified-firebase-measurement-connector-17.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] D:\caches\transforms-3\3ad350df70624c8a4cf479521ff73910\transformed\jetified-firebase-measurement-connector-17.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] D:\caches\transforms-3\0fc35b9ff05ea0313269e1cfcc28d619\transformed\jetified-play-services-stats-16.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] D:\caches\transforms-3\0fc35b9ff05ea0313269e1cfcc28d619\transformed\jetified-play-services-stats-16.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] D:\caches\transforms-3\2d142334f94010248b393888d532ade6\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] D:\caches\transforms-3\2d142334f94010248b393888d532ade6\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\caches\transforms-3\d9b7e84b2405f738ee156f0ce8107f01\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\caches\transforms-3\d9b7e84b2405f738ee156f0ce8107f01\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] D:\caches\transforms-3\5485aa083b1ff224b56118826765b337\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] D:\caches\transforms-3\5485aa083b1ff224b56118826765b337\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] D:\caches\transforms-3\060ebf28c8810d0a3c8f5acd76de0d63\transformed\jetified-activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] D:\caches\transforms-3\060ebf28c8810d0a3c8f5acd76de0d63\transformed\jetified-activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] D:\caches\transforms-3\2772f318967429df1c472eb4b64a6666\transformed\jetified-appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] D:\caches\transforms-3\2772f318967429df1c472eb4b64a6666\transformed\jetified-appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] D:\caches\transforms-3\f68b8a6df7e7c00387301681f2808a47\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] D:\caches\transforms-3\f68b8a6df7e7c00387301681f2808a47\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] D:\caches\transforms-3\cba768a03be081d0160a07a517a061e4\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] D:\caches\transforms-3\cba768a03be081d0160a07a517a061e4\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] D:\caches\transforms-3\5abd558bbe3af6bd6603e6bea27b2ee3\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] D:\caches\transforms-3\5abd558bbe3af6bd6603e6bea27b2ee3\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] D:\caches\transforms-3\918ff905898bcc984b2cbd1e0e76b090\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] D:\caches\transforms-3\918ff905898bcc984b2cbd1e0e76b090\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] D:\caches\transforms-3\5ae8911b433767ce1fa47b99dd67d4ce\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] D:\caches\transforms-3\5ae8911b433767ce1fa47b99dd67d4ce\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] D:\caches\transforms-3\3fc44e5217b3730e436ad77c4546b9bd\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] D:\caches\transforms-3\3fc44e5217b3730e436ad77c4546b9bd\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] D:\caches\transforms-3\690cd8d7343bfdeaefa0dddddbd4b915\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] D:\caches\transforms-3\690cd8d7343bfdeaefa0dddddbd4b915\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] D:\caches\transforms-3\fbe11a65b261831c1a569901d9ee6c57\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] D:\caches\transforms-3\fbe11a65b261831c1a569901d9ee6c57\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] D:\caches\transforms-3\ebad07d60a6841559ca933f3516049d7\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] D:\caches\transforms-3\ebad07d60a6841559ca933f3516049d7\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] D:\caches\transforms-3\c84a7ba3f7035992be0413103e15fbb6\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] D:\caches\transforms-3\c84a7ba3f7035992be0413103e15fbb6\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] D:\caches\transforms-3\e0020d0fd2b694f7e1231cdbb8a141d4\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] D:\caches\transforms-3\e0020d0fd2b694f7e1231cdbb8a141d4\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] D:\caches\transforms-3\a91993defad424062333f688e70bb239\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] D:\caches\transforms-3\a91993defad424062333f688e70bb239\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] D:\caches\transforms-3\ed582bdeb5f51c3f011cfbe5a85b57e5\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] D:\caches\transforms-3\ed582bdeb5f51c3f011cfbe5a85b57e5\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] D:\caches\transforms-3\f088c8f9273e7dc16b21b38e20325a65\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] D:\caches\transforms-3\f088c8f9273e7dc16b21b38e20325a65\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\caches\transforms-3\7384bb70955de8ce5450c1273d2fca23\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\caches\transforms-3\7384bb70955de8ce5450c1273d2fca23\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] D:\caches\transforms-3\5bf6e8b8740b135e76cfd27a4bf0d1d4\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] D:\caches\transforms-3\5bf6e8b8740b135e76cfd27a4bf0d1d4\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] D:\caches\transforms-3\ca3aef3c5f957b127137158068a336e1\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] D:\caches\transforms-3\ca3aef3c5f957b127137158068a336e1\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] D:\caches\transforms-3\273e1bc36117e8e732c26e898439302a\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] D:\caches\transforms-3\273e1bc36117e8e732c26e898439302a\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] D:\caches\transforms-3\f62d6425501a7d61deb83b3f574aaa02\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] D:\caches\transforms-3\f62d6425501a7d61deb83b3f574aaa02\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] D:\caches\transforms-3\5744c49fa2bdc2da4279bf822f5bfbe3\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] D:\caches\transforms-3\5744c49fa2bdc2da4279bf822f5bfbe3\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] D:\caches\transforms-3\4d76bcd7c31cb7da24f41953bde9acb8\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] D:\caches\transforms-3\4d76bcd7c31cb7da24f41953bde9acb8\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] D:\caches\transforms-3\5b73d3498c137dfe1d3fd4fad8d3e9fa\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] D:\caches\transforms-3\5b73d3498c137dfe1d3fd4fad8d3e9fa\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] D:\caches\transforms-3\a6908997b94f9db4a605e9a1cbc2c572\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] D:\caches\transforms-3\a6908997b94f9db4a605e9a1cbc2c572\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] D:\caches\transforms-3\3fcfcb844d66a800447812f63b1f3c15\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] D:\caches\transforms-3\3fcfcb844d66a800447812f63b1f3c15\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] D:\caches\transforms-3\aa6365d44f251e551445148fd21f6d15\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] D:\caches\transforms-3\aa6365d44f251e551445148fd21f6d15\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] D:\caches\transforms-3\850de2c56e3c213e59c67ea887a8f4f2\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] D:\caches\transforms-3\850de2c56e3c213e59c67ea887a8f4f2\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] D:\caches\transforms-3\5ecaa617c9b7eb9d634928a6b4317513\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] D:\caches\transforms-3\5ecaa617c9b7eb9d634928a6b4317513\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] D:\caches\transforms-3\afd36f4aa718d733e65047aec44bd834\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] D:\caches\transforms-3\afd36f4aa718d733e65047aec44bd834\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [org.apache.cordova:framework:7.0.0] D:\caches\transforms-3\79e70e02afb82f9c4500b10f9ee3fd62\transformed\jetified-framework-7.0.0\AndroidManifest.xml:25:5-44
+MERGED from [org.apache.cordova:framework:7.0.0] D:\caches\transforms-3\79e70e02afb82f9c4500b10f9ee3fd62\transformed\jetified-framework-7.0.0\AndroidManifest.xml:25:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] D:\caches\transforms-3\558415f3e97b19583e168243244924a9\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] D:\caches\transforms-3\558415f3e97b19583e168243244924a9\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:32:13-34:64
+	android:resource
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:34:17-51
+	android:name
+		ADDED from F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:33:17-67
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-68
+MERGED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-65
+uses-permission#android.permission.CAMERA
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-15:36
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:21:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:21:5-65
+	android:required
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-33
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-49
+uses-feature#android.hardware.camera
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:5-19:36
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:24:5-26:36
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:24:5-26:36
+	android:required
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-33
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-47
+uses-feature#android.hardware.camera.front
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:5-22:36
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:27:5-29:36
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:27:5-29:36
+	android:required
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:9-33
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-53
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:22-76
+uses-permission#android.permission.VIBRATE
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:5-66
+MERGED from [:capacitor-haptics] F:\moodle\moodleapp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-66
+MERGED from [:capacitor-haptics] F:\moodle\moodleapp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:22-63
+permission#${applicationId}.permission.PushHandlerActivity
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:9-71
+permission#io.ionic.starter.permission.PushHandlerActivity
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:9-71
+permission#${applicationId}.permission.BackgroundHandlerActivity
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:31:5-33:47
+	android:protectionLevel
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:33:9-44
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:32:9-77
+permission#io.ionic.starter.permission.BackgroundHandlerActivity
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:31:5-33:47
+	android:protectionLevel
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:33:9-44
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:32:9-77
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:35:5-80
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:35:22-77
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:36:5-83
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:36:22-80
+queries
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:38:5-55:15
+intent#action:name:android.media.action.IMAGE_CAPTURE
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:39:9-41:18
+action#android.media.action.IMAGE_CAPTURE
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:21-70
+intent#action:name:android.intent.action.GET_CONTENT
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:42:9-44:18
+action#android.intent.action.GET_CONTENT
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-72
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:43:21-69
+intent#action:name:android.intent.action.PICK
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:45:9-47:18
+action#android.intent.action.PICK
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-65
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:46:21-62
+intent#action:name:com.android.camera.action.CROP+data:mimeType:image/*+data:scheme:content
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:48:9-54:18
+action#com.android.camera.action.CROP
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:49:13-69
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:49:21-66
+data
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:51:13-53:44
+	android:scheme
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:53:17-41
+	android:mimeType
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:52:17-43
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:57:5-81
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:57:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:58:5-79
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:58:22-76
+uses-feature#android.hardware.location.gps
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:60:5-62:35
+	android:required
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:62:9-32
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:61:9-53
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:64:5-71
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:64:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:65:5-80
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:65:22-77
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:66:5-75
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:66:22-72
+uses-permission#android.permission.RECORD_VIDEO
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:67:5-71
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:67:22-68
+uses-permission#android.permission.BLUETOOTH
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:68:5-68
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:68:22-65
+provider#de.appplant.cordova.plugin.notification.util.AssetProvider
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:71:9-79:20
+	android:grantUriPermissions
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:75:13-47
+	android:authorities
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:73:13-79
+	android:exported
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:74:13-37
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:72:13-86
+receiver#de.appplant.cordova.plugin.localnotification.TriggerReceiver
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:81:9-83:40
+	android:exported
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:83:13-37
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:82:13-88
+receiver#de.appplant.cordova.plugin.localnotification.ClearReceiver
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:84:9-86:40
+	android:exported
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:86:13-37
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:85:13-86
+receiver#de.appplant.cordova.plugin.localnotification.RestoreReceiver
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:87:9-95:20
+	android:exported
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:90:13-37
+	android:directBootAware
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:89:13-43
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:88:13-88
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.LOCKED_BOOT_COMPLETED
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:91:13-94:29
+action#android.intent.action.LOCKED_BOOT_COMPLETED
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:92:17-86
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:92:25-83
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:93:17-79
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:93:25-76
+service#de.appplant.cordova.plugin.localnotification.ClickReceiver
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:97:9-99:40
+	android:exported
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:99:13-37
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:98:13-86
+activity#com.adobe.phonegap.push.PushHandlerActivity
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:101:9-104:84
+	android:exported
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:103:13-36
+	android:permission
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:104:13-81
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:102:13-71
+activity#com.adobe.phonegap.push.BackgroundHandlerActivity
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:105:9-114:20
+	android:exported
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:107:13-36
+	android:permission
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:108:13-87
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:106:13-77
+intent-filter#action:name:com.adobe.phonegap.push.background.MESSAGING_EVENT+category:name:android.intent.category.DEFAULT
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:109:13-113:29
+action#com.adobe.phonegap.push.background.MESSAGING_EVENT
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:110:17-93
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:110:25-90
+category#android.intent.category.DEFAULT
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:112:17-76
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:112:27-73
+receiver#com.adobe.phonegap.push.BackgroundActionButtonHandler
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:116:9-90
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:116:19-87
+receiver#com.adobe.phonegap.push.PushDismissedHandler
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:117:9-81
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:117:19-78
+service#com.adobe.phonegap.push.FCMService
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:119:9-123:19
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:119:18-67
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:120:13-122:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:121:17-78
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:121:25-75
+service#com.adobe.phonegap.push.PushInstanceIDListenerService
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:124:9-128:19
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:124:18-86
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:125:13-127:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:126:17-80
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:126:25-77
+provider#com.darryncampbell.cordova.plugin.intent.CordovaPluginIntentFileProvider
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:130:9-138:20
+	android:grantUriPermissions
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:134:13-47
+	android:authorities
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:132:13-101
+	android:exported
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:133:13-37
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:131:13-100
+provider#org.apache.cordova.camera.FileProvider
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:139:9-147:20
+	android:grantUriPermissions
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:143:13-47
+	android:authorities
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:141:13-82
+	android:exported
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:142:13-37
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:140:13-66
+provider#io.github.pwlin.cordova.plugins.fileopener2.FileProvider
+ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:148:9-156:20
+	android:grantUriPermissions
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:152:13-47
+	android:authorities
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:150:13-72
+	android:exported
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:151:13-37
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:149:13-84
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:39:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:45:5-82
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:45:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:46:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:46:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:49:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:49:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:50:5-89
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:50:22-86
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:32:5-34:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:34:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:33:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:35:5-37:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:37:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:36:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:38:5-40:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:40:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:39:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:41:5-43:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:43:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:42:9-45
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:46:9-52:63
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:49:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:48:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:50:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:52:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:51:13-54
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:47:13-74
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:18.0.0] D:\caches\transforms-3\7e496931ce972c329e54cea77d97f55b\transformed\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:18.0.0] D:\caches\transforms-3\7e496931ce972c329e54cea77d97f55b\transformed\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:18.0.0] D:\caches\transforms-3\7e496931ce972c329e54cea77d97f55b\transformed\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:29:13-82
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:26:22-79
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:30:13-84
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:42:25-78
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:13:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] D:\caches\transforms-3\114ff0e1619142e0fce70e822c786fe4\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] D:\caches\transforms-3\114ff0e1619142e0fce70e822c786fe4\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] D:\caches\transforms-3\114ff0e1619142e0fce70e822c786fe4\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] D:\caches\transforms-3\114ff0e1619142e0fce70e822c786fe4\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] D:\caches\transforms-3\2d142334f94010248b393888d532ade6\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] D:\caches\transforms-3\2d142334f94010248b393888d532ade6\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] D:\caches\transforms-3\2d142334f94010248b393888d532ade6\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58

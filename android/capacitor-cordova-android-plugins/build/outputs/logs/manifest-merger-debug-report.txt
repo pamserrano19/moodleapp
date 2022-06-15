@@ -1,0 +1,293 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:2:1-83:12
+	xmlns:amazon
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:4:1-57
+	package
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:2:11-46
+		INJECTED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+		INJECTED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:3:1-59
+application
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:5:1-46:15
+provider#de.appplant.cordova.plugin.notification.util.AssetProvider
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:6:1-8:12
+	android:grantUriPermissions
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:6:177-211
+	android:authorities
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:6:85-151
+	android:exported
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:6:152-176
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:6:11-84
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:7:3-123
+	android:resource
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:7:65-121
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:7:14-64
+receiver#de.appplant.cordova.plugin.localnotification.TriggerReceiver
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:9:1-113
+	android:exported
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:9:87-111
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:9:11-86
+receiver#de.appplant.cordova.plugin.localnotification.ClearReceiver
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:10:1-111
+	android:exported
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:10:85-109
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:10:11-84
+receiver#de.appplant.cordova.plugin.localnotification.RestoreReceiver
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:11:1-16:12
+	android:exported
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:11:118-142
+	android:directBootAware
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:11:87-117
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:11:11-86
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.LOCKED_BOOT_COMPLETED
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:12:3-15:19
+action#android.intent.action.LOCKED_BOOT_COMPLETED
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:13:5-73
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:13:13-71
+action#android.intent.action.BOOT_COMPLETED
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:14:5-66
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:14:13-64
+service#de.appplant.cordova.plugin.localnotification.ClickReceiver
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:17:1-110
+	android:exported
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:17:84-108
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:17:10-83
+activity#com.adobe.phonegap.push.PushHandlerActivity
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:18:1-164
+	android:exported
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:18:70-93
+	android:permission
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:18:94-162
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:18:11-69
+activity#com.adobe.phonegap.push.BackgroundHandlerActivity
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:19:1-24:12
+	android:exported
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:19:76-99
+	android:permission
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:19:100-174
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:19:11-75
+intent-filter#action:name:com.adobe.phonegap.push.background.MESSAGING_EVENT+category:name:android.intent.category.DEFAULT
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:20:3-23:19
+action#com.adobe.phonegap.push.background.MESSAGING_EVENT
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:21:5-80
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:21:13-78
+category#android.intent.category.DEFAULT
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:22:5-63
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:22:15-61
+receiver#com.adobe.phonegap.push.BackgroundActionButtonHandler
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:25:1-81
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:25:11-79
+receiver#com.adobe.phonegap.push.PushDismissedHandler
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:26:1-72
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:26:11-70
+service#com.adobe.phonegap.push.FCMService
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:27:1-31:11
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:27:10-59
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:28:3-30:19
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:29:5-65
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:29:13-63
+service#com.adobe.phonegap.push.PushInstanceIDListenerService
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:32:1-36:11
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:32:10-78
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:33:3-35:19
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:34:5-67
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:34:13-65
+provider#com.darryncampbell.cordova.plugin.intent.CordovaPluginIntentFileProvider
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:37:1-39:12
+	android:grantUriPermissions
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:37:213-247
+	android:authorities
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:37:99-187
+	android:exported
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:37:188-212
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:37:11-98
+provider#org.apache.cordova.camera.FileProvider
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:40:1-42:12
+	android:grantUriPermissions
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:40:160-194
+	android:authorities
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:40:65-134
+	android:exported
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:40:135-159
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:40:11-64
+provider#io.github.pwlin.cordova.plugins.fileopener2.FileProvider
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:43:1-45:12
+	android:grantUriPermissions
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:43:168-202
+	android:authorities
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:43:83-142
+	android:exported
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:43:143-167
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:43:11-82
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:47:1-76
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:47:18-74
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:48:1-76
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:48:18-74
+uses-permission#android.permission.WAKE_LOCK
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:49:1-63
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:49:18-61
+uses-permission#android.permission.CAMERA
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:50:1-85
+	android:required
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:50:59-83
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:50:18-58
+uses-feature#android.hardware.camera
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:51:1-80
+	android:required
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:51:54-78
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:51:15-53
+uses-feature#android.hardware.camera.front
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:52:1-86
+	android:required
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:52:60-84
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:52:15-59
+uses-permission#android.permission.INTERNET
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:53:1-62
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:53:18-60
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:54:1-74
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:54:18-72
+uses-permission#android.permission.VIBRATE
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:55:1-61
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:55:18-59
+permission#${applicationId}.permission.PushHandlerActivity
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:56:1-113
+	android:protectionLevel
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:56:76-111
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:56:13-75
+permission#${applicationId}.permission.BackgroundHandlerActivity
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:57:1-119
+	android:protectionLevel
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:57:82-117
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:57:13-81
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:58:1-75
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:58:18-73
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:59:1-78
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:59:18-76
+queries
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:60:1-74:11
+intent#action:name:android.media.action.IMAGE_CAPTURE
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:61:3-63:12
+action#android.media.action.IMAGE_CAPTURE
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:62:5-64
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:62:13-62
+intent#action:name:android.intent.action.GET_CONTENT
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:64:3-66:12
+action#android.intent.action.GET_CONTENT
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:65:5-63
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:65:13-61
+intent#action:name:android.intent.action.PICK
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:67:3-69:12
+action#android.intent.action.PICK
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:68:5-56
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:68:13-54
+intent#action:name:com.android.camera.action.CROP+data:mimeType:image/*+data:scheme:content
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:70:3-73:12
+action#com.android.camera.action.CROP
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:71:5-60
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:71:13-58
+data
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:72:5-64
+	android:scheme
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:72:11-35
+	android:mimeType
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:72:36-62
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:75:1-76
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:75:18-74
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:76:1-74
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:76:18-72
+uses-feature#android.hardware.location.gps
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:77:1-85
+	android:required
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:77:60-83
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:77:15-59
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:78:1-66
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:78:18-64
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:79:1-75
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:79:18-73
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:80:1-70
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:80:18-68
+uses-permission#android.permission.RECORD_VIDEO
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:81:1-66
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:81:18-64
+uses-permission#android.permission.BLUETOOTH
+ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:82:1-63
+	android:name
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:82:18-61
+uses-sdk
+INJECTED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+INJECTED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+INJECTED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+INJECTED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+		INJECTED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+		ADDED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+		INJECTED from F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml

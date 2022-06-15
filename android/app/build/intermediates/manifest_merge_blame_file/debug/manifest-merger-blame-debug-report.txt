@@ -1,0 +1,530 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.ionic.starter"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml
+10
+11    <!-- Permissions -->
+12
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:40:5-67
+13-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:40:22-64
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-81
+14-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-78
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
+15-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-68
+16-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-65
+17    <uses-permission
+17-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-15:36
+18        android:name="android.permission.CAMERA"
+18-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-49
+19        android:required="false" />
+19-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-33
+20
+21    <uses-feature
+21-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:5-19:36
+22        android:name="android.hardware.camera"
+22-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-47
+23        android:required="false" />
+23-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-33
+24    <uses-feature
+24-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:5-22:36
+25        android:name="android.hardware.camera.front"
+25-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-53
+26        android:required="false" />
+26-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:9-33
+27
+28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+28-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:5-79
+28-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:22-76
+29    <uses-permission android:name="android.permission.VIBRATE" />
+29-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:5-66
+29-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:22-63
+30
+31    <permission
+31-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:5-30:47
+32        android:name="io.ionic.starter.permission.PushHandlerActivity"
+32-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:9-71
+33        android:protectionLevel="signature" />
+33-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:9-44
+34    <permission
+34-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:31:5-33:47
+35        android:name="io.ionic.starter.permission.BackgroundHandlerActivity"
+35-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:32:9-77
+36        android:protectionLevel="signature" />
+36-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:33:9-44
+37
+38    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+38-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:35:5-80
+38-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:35:22-77
+39    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+39-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:36:5-83
+39-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:36:22-80
+40
+41    <queries>
+41-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:38:5-55:15
+42        <intent>
+42-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:39:9-41:18
+43            <action android:name="android.media.action.IMAGE_CAPTURE" />
+43-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:13-73
+43-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:21-70
+44        </intent>
+45        <intent>
+45-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:42:9-44:18
+46            <action android:name="android.intent.action.GET_CONTENT" />
+46-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-72
+46-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:43:21-69
+47        </intent>
+48        <intent>
+48-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:45:9-47:18
+49            <action android:name="android.intent.action.PICK" />
+49-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-65
+49-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:46:21-62
+50        </intent>
+51        <intent>
+51-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:48:9-54:18
+52            <action android:name="com.android.camera.action.CROP" />
+52-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:49:13-69
+52-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:49:21-66
+53
+54            <data
+54-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:51:13-53:44
+55                android:mimeType="image/*"
+55-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:52:17-43
+56                android:scheme="content" />
+56-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:53:17-41
+57        </intent>
+58    </queries>
+59
+60    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+60-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:57:5-81
+60-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:57:22-78
+61    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+61-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:58:5-79
+61-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:58:22-76
+62
+63    <uses-feature
+63-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:60:5-62:35
+64        android:name="android.hardware.location.gps"
+64-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:61:9-53
+65        android:required="true" />
+65-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:62:9-32
+66
+67    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+67-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:64:5-71
+67-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:64:22-68
+68    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+68-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:65:5-80
+68-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:65:22-77
+69    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+69-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:66:5-75
+69-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:66:22-72
+70    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+70-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:67:5-71
+70-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:67:22-68
+71    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- for android -->
+71-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:68:5-68
+71-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:68:22-65
+72    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+73    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+74    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+75    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+76    <!-- for Samsung -->
+77    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+77-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:19:5-86
+77-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:19:22-83
+78    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+78-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:20:5-87
+78-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:20:22-84
+79    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+79-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:23:5-81
+79-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:23:22-78
+80    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+80-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:24:5-83
+80-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:24:22-80
+81    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+81-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:27:5-88
+81-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:27:22-85
+82    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+82-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:28:5-92
+82-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:28:22-89
+83    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+83-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:31:5-84
+83-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:31:22-81
+84    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+84-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:34:5-83
+84-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:34:22-80
+85    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+85-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:37:5-91
+85-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:37:22-88
+86    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+86-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:38:5-92
+86-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:38:22-89
+87    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+87-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:39:5-93
+87-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:39:22-90
+88    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+88-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:42:5-73
+88-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:42:22-70
+89    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+89-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:45:5-82
+89-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:45:22-79
+90    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+90-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:46:5-83
+90-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:46:22-80
+91    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+91-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:49:5-88
+91-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:49:22-85
+92    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" /> <!-- TODO replace above two with next line after Android 4.2 -->
+92-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:50:5-89
+92-->[me.leolin:ShortcutBadger:1.1.19] D:\caches\transforms-3\c6b5878d525fad57ea1ee40861060f66\transformed\jetified-ShortcutBadger-1.1.19\AndroidManifest.xml:50:22-86
+93    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+94    <uses-feature
+94-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:32:5-34:36
+95        android:name="android.hardware.camera.autofocus"
+95-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:33:9-57
+96        android:required="false" />
+96-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:34:9-33
+97    <uses-feature
+97-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:35:5-37:36
+98        android:name="android.hardware.camera.flash"
+98-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:36:9-53
+99        android:required="false" />
+99-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:37:9-33
+100    <uses-feature
+100-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:38:5-40:36
+101        android:name="android.hardware.screen.landscape"
+101-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:39:9-57
+102        android:required="false" />
+102-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:40:9-33
+103    <uses-feature
+103-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:41:5-43:36
+104        android:name="android.hardware.wifi"
+104-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:42:9-45
+105        android:required="false" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+105-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:43:9-33
+106    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+106-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:26:5-82
+106-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:26:22-79
+107
+108    <application
+108-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:5:5-36:19
+109        android:allowBackup="true"
+109-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:6:9-35
+110        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+110-->[androidx.core:core:1.6.0] D:\caches\transforms-3\f088c8f9273e7dc16b21b38e20325a65\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+111        android:debuggable="true"
+112        android:icon="@mipmap/ic_launcher"
+112-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:7:9-43
+113        android:label="@string/app_name"
+113-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:8:9-41
+114        android:roundIcon="@mipmap/ic_launcher_round"
+114-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:9:9-54
+115        android:supportsRtl="true"
+115-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:10:9-35
+116        android:theme="@style/AppTheme" >
+116-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:11:9-40
+117        <activity
+117-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:13:9-25:20
+118            android:name="io.ionic.starter.MainActivity"
+118-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:15:13-57
+119            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+119-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:14:13-129
+120            android:label="@string/title_activity_main"
+120-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:16:13-56
+121            android:launchMode="singleTask"
+121-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:18:13-44
+122            android:theme="@style/AppTheme.NoActionBarLaunch" >
+122-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:17:13-62
+123            <intent-filter>
+123-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:20:13-23:29
+124                <action android:name="android.intent.action.MAIN" />
+124-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:21:17-69
+124-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:21:25-66
+125
+126                <category android:name="android.intent.category.LAUNCHER" />
+126-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:22:17-77
+126-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:22:27-74
+127            </intent-filter>
+128        </activity>
+129
+130        <provider
+131            android:name="androidx.core.content.FileProvider"
+131-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:28:13-62
+132            android:authorities="io.ionic.starter.fileprovider"
+132-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:29:13-64
+133            android:exported="false"
+133-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:30:13-37
+134            android:grantUriPermissions="true" >
+134-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:31:13-47
+135            <meta-data
+135-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:32:13-34:64
+136                android:name="android.support.FILE_PROVIDER_PATHS"
+136-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:33:17-67
+137                android:resource="@xml/file_paths" />
+137-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:34:17-51
+138        </provider>
+139        <provider
+139-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:71:9-79:20
+140            android:name="de.appplant.cordova.plugin.notification.util.AssetProvider"
+140-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:72:13-86
+141            android:authorities="io.ionic.starter.localnotifications.provider"
+141-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:73:13-79
+142            android:exported="false"
+142-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:74:13-37
+143            android:grantUriPermissions="true" >
+143-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:75:13-47
+144            <meta-data
+144-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:32:13-34:64
+145                android:name="android.support.FILE_PROVIDER_PATHS"
+145-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:33:17-67
+146                android:resource="@xml/localnotification_provider_paths" />
+146-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:34:17-51
+147        </provider>
+148
+149        <receiver
+149-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:81:9-83:40
+150            android:name="de.appplant.cordova.plugin.localnotification.TriggerReceiver"
+150-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:82:13-88
+151            android:exported="false" />
+151-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:83:13-37
+152        <receiver
+152-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:84:9-86:40
+153            android:name="de.appplant.cordova.plugin.localnotification.ClearReceiver"
+153-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:85:13-86
+154            android:exported="false" />
+154-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:86:13-37
+155        <receiver
+155-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:87:9-95:20
+156            android:name="de.appplant.cordova.plugin.localnotification.RestoreReceiver"
+156-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:88:13-88
+157            android:directBootAware="true"
+157-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:89:13-43
+158            android:exported="false" >
+158-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:90:13-37
+159            <intent-filter>
+159-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:91:13-94:29
+160                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+160-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:92:17-86
+160-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:92:25-83
+161                <action android:name="android.intent.action.BOOT_COMPLETED" />
+161-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:93:17-79
+161-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:93:25-76
+162            </intent-filter>
+163        </receiver>
+164
+165        <service
+165-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:97:9-99:40
+166            android:name="de.appplant.cordova.plugin.localnotification.ClickReceiver"
+166-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:98:13-86
+167            android:exported="false" />
+167-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:99:13-37
+168
+169        <activity
+169-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:101:9-104:84
+170            android:name="com.adobe.phonegap.push.PushHandlerActivity"
+170-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:102:13-71
+171            android:exported="true"
+171-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:103:13-36
+172            android:permission="io.ionic.starter.permission.PushHandlerActivity" />
+172-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:104:13-81
+173        <activity
+173-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:105:9-114:20
+174            android:name="com.adobe.phonegap.push.BackgroundHandlerActivity"
+174-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:106:13-77
+175            android:exported="true"
+175-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:107:13-36
+176            android:permission="io.ionic.starter.permission.BackgroundHandlerActivity" >
+176-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:108:13-87
+177            <intent-filter>
+177-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:109:13-113:29
+178                <action android:name="com.adobe.phonegap.push.background.MESSAGING_EVENT" />
+178-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:110:17-93
+178-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:110:25-90
+179
+180                <category android:name="android.intent.category.DEFAULT" />
+180-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:112:17-76
+180-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:112:27-73
+181            </intent-filter>
+182        </activity>
+183
+184        <receiver android:name="com.adobe.phonegap.push.BackgroundActionButtonHandler" />
+184-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:116:9-90
+184-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:116:19-87
+185        <receiver android:name="com.adobe.phonegap.push.PushDismissedHandler" />
+185-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:117:9-81
+185-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:117:19-78
+186
+187        <service android:name="com.adobe.phonegap.push.FCMService" >
+187-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:119:9-123:19
+187-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:119:18-67
+188            <intent-filter>
+188-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:120:13-122:29
+189                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+189-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:121:17-78
+189-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:121:25-75
+190            </intent-filter>
+191        </service>
+192        <service android:name="com.adobe.phonegap.push.PushInstanceIDListenerService" >
+192-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:124:9-128:19
+192-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:124:18-86
+193            <intent-filter>
+193-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:125:13-127:29
+194                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+194-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:126:17-80
+194-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:126:25-77
+195            </intent-filter>
+196        </service>
+197
+198        <provider
+198-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:130:9-138:20
+199            android:name="com.darryncampbell.cordova.plugin.intent.CordovaPluginIntentFileProvider"
+199-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:131:13-100
+200            android:authorities="io.ionic.starter.darryncampbell.cordova.plugin.intent.fileprovider"
+200-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:132:13-101
+201            android:exported="false"
+201-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:133:13-37
+202            android:grantUriPermissions="true" >
+202-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:134:13-47
+203            <meta-data
+203-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:32:13-34:64
+204                android:name="android.support.FILE_PROVIDER_PATHS"
+204-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:33:17-67
+205                android:resource="@xml/provider_paths" />
+205-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:34:17-51
+206        </provider>
+207        <provider
+207-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:139:9-147:20
+208            android:name="org.apache.cordova.camera.FileProvider"
+208-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:140:13-66
+209            android:authorities="io.ionic.starter.cordova.plugin.camera.provider"
+209-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:141:13-82
+210            android:exported="false"
+210-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:142:13-37
+211            android:grantUriPermissions="true" >
+211-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:143:13-47
+212            <meta-data
+212-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:32:13-34:64
+213                android:name="android.support.FILE_PROVIDER_PATHS"
+213-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:33:17-67
+214                android:resource="@xml/camera_provider_paths" />
+214-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:34:17-51
+215        </provider>
+216        <provider
+216-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:148:9-156:20
+217            android:name="io.github.pwlin.cordova.plugins.fileopener2.FileProvider"
+217-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:149:13-84
+218            android:authorities="io.ionic.starter.fileOpener2.provider"
+218-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:150:13-72
+219            android:exported="false"
+219-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:151:13-37
+220            android:grantUriPermissions="true" >
+220-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:152:13-47
+221            <meta-data
+221-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:32:13-34:64
+222                android:name="android.support.FILE_PROVIDER_PATHS"
+222-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:33:17-67
+223                android:resource="@xml/opener_paths" />
+223-->F:\moodle\moodleapp\android\app\src\main\AndroidManifest.xml:34:17-51
+224        </provider>
+225
+226        <activity
+226-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:46:9-52:63
+227            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+227-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:47:13-74
+228            android:clearTaskOnLaunch="true"
+228-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:48:13-45
+229            android:screenOrientation="sensorLandscape"
+229-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:49:13-56
+230            android:stateNotNeeded="true"
+230-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:50:13-42
+231            android:theme="@style/zxing_CaptureTheme"
+231-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:51:13-54
+232            android:windowSoftInputMode="stateAlwaysHidden" />
+232-->[com.journeyapps:zxing-android-embedded:3.3.0] D:\caches\transforms-3\ef09990cc7281de1b7a5778b2ea46a65\transformed\jetified-zxing-android-embedded-3.3.0\AndroidManifest.xml:52:13-60
+233        <!--
+234             FirebaseMessagingService performs security checks at runtime,
+235             but set to not exported to explicitly avoid allowing another app to call it.
+236        -->
+237        <service
+237-->[com.google.firebase:firebase-messaging:18.0.0] D:\caches\transforms-3\7e496931ce972c329e54cea77d97f55b\transformed\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:28:9-34:19
+238            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+238-->[com.google.firebase:firebase-messaging:18.0.0] D:\caches\transforms-3\7e496931ce972c329e54cea77d97f55b\transformed\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:29:13-82
+239            android:exported="false" >
+239-->[com.google.firebase:firebase-messaging:18.0.0] D:\caches\transforms-3\7e496931ce972c329e54cea77d97f55b\transformed\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:30:13-37
+240            <intent-filter android:priority="-500" >
+240-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:120:13-122:29
+241                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+241-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:121:17-78
+241-->[:capacitor-cordova-android-plugins] F:\moodle\moodleapp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:121:25-75
+242            </intent-filter>
+243        </service>
+244        <service
+244-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:29:9-35:19
+245            android:name="com.google.firebase.components.ComponentDiscoveryService"
+245-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:30:13-84
+246            android:exported="false" >
+246-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:31:13-37
+247            <meta-data
+247-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:32:13-34:85
+248                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+248-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:33:17-96
+249                android:value="com.google.firebase.components.ComponentRegistrar" />
+249-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:34:17-82
+250        </service>
+251
+252        <receiver
+252-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:37:9-44:20
+253            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+253-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:38:13-78
+254            android:exported="true"
+254-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:39:13-36
+255            android:permission="com.google.android.c2dm.permission.SEND" >
+255-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:40:13-73
+256            <intent-filter>
+256-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:41:13-43:29
+257                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+257-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:42:17-81
+257-->[com.google.firebase:firebase-iid:18.0.0] D:\caches\transforms-3\b80f6a41754e333c5b1180098a874085\transformed\jetified-firebase-iid-18.0.0\AndroidManifest.xml:42:25-78
+258            </intent-filter>
+259        </receiver>
+260
+261        <provider
+261-->[com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:12:9-16:39
+262            android:name="com.google.firebase.provider.FirebaseInitProvider"
+262-->[com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:13:13-77
+263            android:authorities="io.ionic.starter.firebaseinitprovider"
+263-->[com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:14:13-72
+264            android:exported="false"
+264-->[com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:15:13-37
+265            android:initOrder="100" />
+265-->[com.google.firebase:firebase-common:17.0.0] D:\caches\transforms-3\e999cd82b1e2371196aa5bf6ed4c942e\transformed\jetified-firebase-common-17.0.0\AndroidManifest.xml:16:13-36
+266
+267        <activity
+267-->[com.google.android.gms:play-services-base:16.0.1] D:\caches\transforms-3\114ff0e1619142e0fce70e822c786fe4\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+268            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+268-->[com.google.android.gms:play-services-base:16.0.1] D:\caches\transforms-3\114ff0e1619142e0fce70e822c786fe4\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+269            android:exported="false"
+269-->[com.google.android.gms:play-services-base:16.0.1] D:\caches\transforms-3\114ff0e1619142e0fce70e822c786fe4\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+270            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+270-->[com.google.android.gms:play-services-base:16.0.1] D:\caches\transforms-3\114ff0e1619142e0fce70e822c786fe4\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+271
+272        <meta-data
+272-->[com.google.android.gms:play-services-basement:16.0.1] D:\caches\transforms-3\2d142334f94010248b393888d532ade6\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+273            android:name="com.google.android.gms.version"
+273-->[com.google.android.gms:play-services-basement:16.0.1] D:\caches\transforms-3\2d142334f94010248b393888d532ade6\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+274            android:value="@integer/google_play_services_version" />
+274-->[com.google.android.gms:play-services-basement:16.0.1] D:\caches\transforms-3\2d142334f94010248b393888d532ade6\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+275    </application>
+276
+277</manifest>

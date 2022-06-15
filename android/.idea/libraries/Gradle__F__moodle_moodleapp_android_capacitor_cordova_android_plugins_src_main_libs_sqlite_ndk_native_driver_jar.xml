@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: F./moodle/moodleapp/android/capacitor-cordova-android-plugins/src/main/libs/sqlite-ndk-native-driver.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/capacitor-cordova-android-plugins/src/main/libs/sqlite-ndk-native-driver.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_action_next_item
+drawable ic_action_previous_item
+drawable ic_action_remove
+xml camera_provider_paths
+xml localnotification_provider_paths
+xml opener_paths
+xml provider_paths
