@@ -64,26 +64,26 @@
         "zh-tw": "正體中文"
     },
     "wsservice": "moodle_mobile_app",
-    "demo_sites": {
-        "student": {
-            "url": "https://school.moodledemo.net",
-            "username": "student",
-            "password": "moodle"
-        },
-        "teacher": {
-            "url": "https://school.moodledemo.net",
-            "username": "teacher",
-            "password": "moodle"
-        }
-    },
+    // "demo_sites": {
+    //     "student": {
+    //         "url": "https://school.moodledemo.net",
+    //         "username": "student",
+    //         "password": "moodle"
+    //     },
+    //     "teacher": {
+    //         "url": "https://school.moodledemo.net",
+    //         "username": "teacher",
+    //         "password": "moodle"
+    //     }
+    // },
     "zoomlevels": {
         "normal": 100,
         "low": 110,
         "high": 120
     },
     "customurlscheme": "moodlemobile",
-    "siteurl": "",
-    "sitename": "",
+    "siteurl": "https://leons.cspc.edu.ph/",
+    "sitename": "CSPC LeOnS",
     "multisitesdisplay": "",
     "sitefindersettings": {},
     "onlyallowlistedsites": false,
